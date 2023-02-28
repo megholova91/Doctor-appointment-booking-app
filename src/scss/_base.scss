@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  .headerContainer {
+    height: 80px;
+    background: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+  }
+  .doctorCard {
+    width: 200px;
+    max-width: 200px;
+    height: 200px;
+    max-height: 200px;
+    border: 2px solid $primary;
+  }
+
+  .selectedTag {
+    color: $black;
+  }
+  .fixWidthButton {
+    width: 150px;
+    max-width: 150px;
+  }
+  .btn.btn-outline-info[disabled] {
+    background-color: $secondary;
+    color: $black;
+    border: 1px solid $black;
+    opacity: 0.5;
+  }
+}
