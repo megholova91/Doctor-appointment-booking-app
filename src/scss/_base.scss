@@ -3,24 +3,32 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  background: rgb(241, 241, 241);
   .headerContainer {
     height: 80px;
-    background: aliceblue;
+    background: linear-gradient(90deg, $dark 0%, rgba(43,145,133,1) 35%, $primary 100%);;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 30px;
+    a {
+      color: $dark !important;
+      font-size: 20px;
+      &:hover {
+        color: $dark;
+      }
+    }
   }
   .doctorCard {
     width: 200px;
     max-width: 200px;
     height: 200px;
     max-height: 200px;
-    border: 2px solid $primary;
+    border: 2px solid $info;
   }
 
   .selectedTag {
-    color: $black;
+    color: $dark;
   }
   .fixWidthButton {
     width: 150px;
@@ -28,8 +36,12 @@ body {
   }
   .btn.btn-outline-info[disabled] {
     background-color: $secondary;
-    color: $black;
-    border: 1px solid $black;
+    color: $dark;
+    border: 1px solid $dark;
     opacity: 0.5;
+  }
+
+  h3 {
+    color:  $dark;
   }
 }

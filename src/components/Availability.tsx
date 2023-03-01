@@ -26,13 +26,13 @@ const Availability = memo(
     const unavailableSlots = filledSlots[selectedDate] ?? [];
     return (
       <div className="d-flex flex-column mb-3">
-        <h6>Available Slots</h6>
+        <h5 className="text-center mb-3">Available Slots</h5>
         <Dates
           handleDateSelection={handleDateSelection}
           selectedDate={selectedDate}
         />
-        <br />
-        <div className="text-center text-info fs-5">{`Slots for ${moment(
+        <hr />
+        <div className="text-center fs-5">{`Slots for ${moment(
           selectedDate
         ).format('DD MMM')}`}</div>
         <SlotsSection

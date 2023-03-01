@@ -10,7 +10,8 @@ interface IDoctorProfileProps {
 
 const DoctorProfile = memo(
   ({ name, description, line1, line2, district }: IDoctorProfileProps) => (
-    <>
+    <div className="container">
+      <h4>Doctor details</h4>
       <h5>{name}</h5>
       <span>{description}</span>
       <p>
@@ -19,7 +20,7 @@ const DoctorProfile = memo(
         <span>{line2}, </span>
         <span>{district}</span>
       </p>
-    </>
+    </div>
   )
 );
 

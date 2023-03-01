@@ -9,7 +9,7 @@ interface IDoctorListProps {
 
 const DoctorList = memo(({ doctorList }: IDoctorListProps) => (
   <div className="container d-flex flex-column mt-3 mb-3">
-    <h3>Available doctors</h3>
+    <h3 className="text-center">Available doctors</h3>
     <div className="d-flex justify-content-between flex-wrap">
       {doctorList.map((doctor) => {
         const {
