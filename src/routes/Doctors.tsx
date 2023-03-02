@@ -1,7 +1,7 @@
 import { useEffect, memo, useState } from 'react';
 import { getBookingList, getDoctorList } from '../api';
 import { TDoctor } from '../types';
-import DoctorList from '../components/DoctorList';
+import DoctorList from '../pages/DoctorList';
 
 const Doctor = memo(() => {
   const [doctors, setDoctors] = useState<TDoctor[]>([]);

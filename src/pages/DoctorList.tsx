@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
 import { TDoctor } from '../types';
-import DoctorCard from './DoctorCard';
+import DoctorCard from '../components/DoctorCard';
 
 interface IDoctorListProps {
   doctorList: TDoctor[];

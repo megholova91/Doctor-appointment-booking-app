@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
-import DoctorDetails from '../components/DoctorDetails';
+import DoctorDetails from '../pages/DoctorDetails';
 import { TDoctor } from '../types';
 
 const Doctor = memo(() => {
