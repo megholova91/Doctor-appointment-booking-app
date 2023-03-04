@@ -2,6 +2,7 @@ import { SyntheticEvent, memo } from 'react';
 import moment from 'moment';
 import Loader from './Loader';
 import BookingConfirm from './BookingConfirm';
+import { BOOKING_ERROR_MESSAGE } from '../constants';
 
 interface IBookingProps {
   userName: string;
@@ -34,12 +35,7 @@ const Booking = memo(
       </span>
       <br />
       {bookingId && <BookingConfirm bookingId={bookingId} />}
-      {isBookingError && (
-        <span>
-          Some error occurred while booking your appointment! Please try after
-          sometime
-        </span>
-      )}
+      {isBookingError && <span>{BOOKING_ERROR_MESSAGE}</span>}
       {!bookingId && !isBookingError && (
         <>
           <p>Enter your name to proceed with the booking</p>
