@@ -69,8 +69,12 @@ function DoctorDetails({
     };
     try {
       const res = await postBooking(booking);
-      setBookingId(res.id);
-      setIsBookingError(false);
+      if (res.id) {
+        setBookingId(res.id);
+        setIsBookingError(false);
+      } else {
+        throw new Error();
+      }
     } catch {
       setBookingId('');
       setIsBookingError(true);

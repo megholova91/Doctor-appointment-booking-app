@@ -35,8 +35,9 @@ https://main--aesthetic-pastelito-4df927.netlify.app/
 ## Technical improvements
 
 1. Usage of a global state management like Redux.js will prevent using browser storage.
-2. Testing : unit test cases for each functionality, E2E testing.
-3. Adding the API key as part of the environment variables.
+2. Better error handling mechanism on the UI.
+3. Testing : unit test cases for each functionality, E2E testing.
+4. Adding the API key as part of the environment variables.
 
 ## Production consideration
 
