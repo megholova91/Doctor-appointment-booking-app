@@ -11,7 +11,7 @@ npm start
 
 ## Link to application
 
-https://main--aesthetic-pastelito-4df927.netlify.app/
+[Book an appointment](https://megholova-doctor-appointment-app.netlify.app/)
 
 ## Scope
 
